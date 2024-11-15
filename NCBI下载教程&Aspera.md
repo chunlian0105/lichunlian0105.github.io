@@ -46,11 +46,11 @@ SRA：submission_accession
 获得结果，点击Show Column Selection，选择run_accession，fastq_aspera，sra_aspera这三项。点击Hide Column Selection
 点击Download report后的TSV，得到一个文件filereport_read_run_SRX5327410_tsv.txt
 
-![image-20241115194554361](C:\Users\黎春莲\AppData\Roaming\Typora\typora-user-images\image-20241115194554361.png)
+![image-20241115194554361](https://github.com/chunlian0105/lichunlian0105.github.io/blob/main/image-20241115194554361.png)
 
-![image-20241115194613232](C:\Users\黎春莲\AppData\Roaming\Typora\typora-user-images\image-20241115194613232.png)
+![image-20241115194613232](https://github.com/chunlian0105/lichunlian0105.github.io/blob/main/image-20241115194613232.png)
 
-![image-20241115194633201](C:\Users\黎春莲\AppData\Roaming\Typora\typora-user-images\image-20241115194633201.png)
+![image-20241115194633201](https://github.com/chunlian0105/lichunlian0105.github.io/blob/main/image-20241115194633201.png)
 
 ## **4.下载数据**
 
