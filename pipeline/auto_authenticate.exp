@@ -1,0 +1,20 @@
+#!/usr/bin/expect -f
+
+# 设置超时时间为无限
+set timeout -1
+
+# 从参数中获取sample_file变量
+set sample [lindex $argv 0]
+set current_pwd [exec pwd]
+# 启动 sudo 命令
+# 使用 -a 选项来指定输入文件
+spawn systemd-run --scope -p MemoryLimit=400G parallel -j 2 -v --xapply "checkm lineage_wf -t 4 -x fna --nt --tab_table -f $current_pwd/checkm/{1}/bins_qa.txt $current_pwd/vamb/{1}/bins $current_pwd/checkm/{1}/bins_qa_result > $current_pwd/logs/checkm_{1}.log 2>&1" ::: $sample
+
+# 选择身份 1
+expect "Choose identity to authenticate as (1-2):" { send "1\r" }
+
+# 输入密码
+expect "Password:" { send "xj20240601\r" }
+
+# 等待命令完成
+expect eof
